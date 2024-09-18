@@ -1,0 +1,263 @@
+.heading-main {
+    text-align: center;
+    align-content: start;
+}
+
+.head {
+    h1 {
+        text-align: center;
+        color: #a32136;
+    }
+    p {
+        padding: 0 10px;
+    }
+}
+
+.SubNav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8vh;
+    background-color: #a32136;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+
+    ul {
+        display: flex;
+        gap: 50px;
+
+        li {
+            list-style: none;
+
+            a {
+                color: white;
+                font-size: 1.1rem;
+            }
+        }
+    }
+}
+
+.SubNav {
+    top: 8vh;
+    background-color: #a32136;
+}
+
+.mini-heading {
+    margin-top: 150px;
+}
+
+/* ==========SBHR============ */
+
+.HomeSlider {
+    width: 90%;
+    height: 60vh;
+    background-color: grey;
+    margin: auto;
+}
+
+.bookingSection {
+    margin: 50px 0;
+}
+
+/* ===============Home Body================ */
+
+.image-slider {
+    height: 350px;
+    width: 750px;
+    box-shadow: 0 0 40px;
+}
+
+.left {
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    padding: 30px 0;
+    background-color: rgb(202, 194, 194);
+
+    .image-slider {
+        border-radius: 0 90px 90px 0;
+    }
+
+    .content {
+        padding: 0 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h2 {
+            color: #a32136;
+        }
+    }
+}
+
+.right {
+    padding: 30px 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 50px;
+    background-color: rgb(232, 232, 233);
+
+    .image-slider {
+        border-radius: 90px 0px 0px 90px;
+    }
+
+    .content {
+        padding: 0 10px;
+        text-align: right;
+        display: flex;
+        align-items: center;
+
+        h2 {
+            color: #a32136;
+        }
+    }
+}
+
+.features {
+    padding: 50px 0;
+
+    display: flex;
+
+    div div {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    h1 {
+        color: #a32136;
+        text-decoration: underline;
+    }
+
+    ul {
+        margin: 0 30px;
+    }
+
+    li {
+        font-size: larger;
+        padding: 5px 0;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .left,
+    .right {
+        .image-slider {
+            height: 300px;
+            width: 550px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    .head {
+        flex-wrap: wrap;
+        justify-content: start;
+        padding: 10px;
+
+        h1,
+        p {
+            /* margin: 5px; */
+        }
+    }
+
+    .right {
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        background-color: #dddddd;
+    }
+
+    .left {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .left,
+    .right {
+
+        .image-slider {
+            height: 350px;
+            width: 100%;
+            border-radius: 0px;
+        }
+
+        .content {
+            text-align: left;
+            margin: 0 30px;
+            width: auto;
+
+            p,
+            h2 {
+                margin: 0;
+            }
+        }
+
+        ul {
+            list-style: none;
+        }
+    }
+}
+
+@media (max-width: 426px) {
+    
+    .head {
+        p {
+            margin: 0;
+            padding: 5px;
+        }
+    }
+
+    .left,
+    .right {
+        .image-slider {
+            height: 210px;
+            width: 100%;
+            border-radius: 0px;
+        }
+
+        .content {
+            margin: 0;
+        }
+    }
+
+    .features {
+        padding: 10px 0;
+        flex-wrap: wrap;
+
+        ul {
+            margin: 0 10px;
+        }
+
+        li {
+            font-size: larger;
+            padding: 0px;
+        }
+
+    }
+}
+
+@media (max-width: 321px) {
+    .left,
+    .right {
+        text-align: left;
+
+        .image-slider {
+            height: 170px;
+            border-radius: 0px;
+        }
+
+        .content {
+            padding: 0 10px;
+
+            h2,
+            p,
+            ul {
+                margin: 0;
+            }
+        }
+    }
+}

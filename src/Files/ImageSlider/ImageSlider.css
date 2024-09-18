@@ -1,0 +1,35 @@
+.slider-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.arrow-button {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 10;
+  border-radius: 50%;
+}
+
+.left-arrow {
+  left: 10px;
+}
+
+.right-arrow {
+  right: 10px;
+}
+
+.arrow-button:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.image-slider {
+  height: 350px;
+  width: 750px;
+  box-shadow: 0 0 40px;
+}
