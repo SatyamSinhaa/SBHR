@@ -5,7 +5,6 @@ import { AboutContent, HydHomeContent, WelcomeContent } from '../../Files/Store/
 import HeadImageSlider from '../../Files/ImageSlider/HeadImageSlider'
 import HeaderContent from '../../Components/HeaderContent'
 import HydFooter from '../../Components/Footer/HydFooter'
-import Footer from '../../Components/Footer/Footer'
 
 const Hyderabad = () => {
     return (
@@ -52,8 +51,8 @@ const Hyderabad = () => {
             </div>
             {/* <HeaderContent head={AboutContent[0].head} para={AboutContent[0].para} /> */}
             <center><b>Thank you for considering Samadhana Sadan for your event needs .</b></center> <br/>
-            {/* <HydFooter /> */}
-            <Footer/>
+            <HydFooter />
+    
         </div>
     )
 }
