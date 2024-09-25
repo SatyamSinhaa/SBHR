@@ -51,7 +51,8 @@ const Guntur = () => {
                 </div>
             </div>
 
-            <HeaderContent head={AboutContent[1].head} para={AboutContent[1].para} />
+            {/* <HeaderContent head={AboutContent[1].head} para={AboutContent[1].para} /> */}
+            <center><b>Thankyou for considering Samaikhyata Sadan for your event needs</b></center> <br/>
             <GuntFooter/>
         </div>
     )

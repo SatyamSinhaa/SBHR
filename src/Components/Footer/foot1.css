@@ -1,0 +1,32 @@
+.foot1 {
+    padding: 50px 0px ;
+    color: white;
+    background-color: #a32136;
+    display: flex;
+    justify-content: space-between;
+
+    h3, h4, p {
+        margin: 0;
+    }
+
+    a {
+        color: white;
+    }
+}
+
+.foot1 div {
+    text-align: left;
+
+    .icons {
+        font-size: 25px;
+        margin: 20px 10px 0;
+    }
+}
+
+.con-sec {
+    display: flex;
+}
+
+.section-div {
+    width: 30%;
+}

@@ -7,9 +7,7 @@ import Img6 from "../../Assets/BurningBush.jpg";
 import Img7 from "../../Assets/Cairo Museum.jpg";
 import Img8 from "../../Assets/Cairo.jpg";
 import Img9 from "../../Assets/Canaan.jpg";
-// import HeaderContent from "../../Components/HeaderContent";
 import { SectionBody } from "../ImageSlider/HomeBody";
-// import { HomeContent } from "./Content";
 import { BangDineImg, BangEventImg, GuntDineImg, GuntEventImg, GuntStayImg, HydDineImg, HydEventImg, PondDineImg, PondEventImg, PondStayImg } from "./ImagesStore";
 import { BangHeader, GuntHeader, HydHeader, HydStay, PondHeader } from "./Content";
 import { HydDine } from "./Content";
@@ -25,6 +23,10 @@ import { PondDine } from "./Content";
 import { PondEvents } from "./Content";
 import { HydStayImg } from "./ImagesStore";
 import HeaderContent from "../../Components/HeaderContent";
+import HydFooter from "../../Components/Footer/HydFooter";
+import GuntFooter from "../../Components/Footer/GuntFooter";
+import BangFooter from "../../Components/Footer/BangFooter";
+import PondFooter from "../../Components/Footer/PondFooter";
 
 export const imageSlides = {
   hyderabad: [
@@ -52,6 +54,7 @@ export const stayDetails = {
         <SectionBody images={HydStayImg[0].Images} content={HydStay[0].content} /><hr />
         <SectionBody images={HydStayImg[1].Images} content={HydStay[1].content} /><hr />
         <SectionBody images={HydStayImg[2].Images} content={HydStay[2].content} />
+        <HydFooter />
       </div>,
     popularStays: [
       'Taj Falaknuma Palace',
@@ -67,6 +70,7 @@ export const stayDetails = {
         <SectionBody images={GuntStayImg[0].Images} content={GuntStay[0].content} /><hr />
         <SectionBody images={GuntStayImg[1].Images} content={GuntStay[1].content} /><hr />
         <SectionBody images={GuntStayImg[2].Images} content={GuntStay[2].content} />
+        <GuntFooter />
       </div>,
     popularStays: [
       'Hotel Grand Krishna',
@@ -82,6 +86,7 @@ export const stayDetails = {
         <SectionBody images={BangDineImg[0].Images} content={BangStay[0].content} /><hr />
         <SectionBody images={BangDineImg[1].Images} content={BangStay[1].content} /><hr />
         <SectionBody images={BangDineImg[2].Images} content={BangStay[2].content} />
+        <BangFooter />
       </div>,
     popularStays: [
       'The Leela Palace',
@@ -97,6 +102,7 @@ export const stayDetails = {
         <SectionBody images={PondStayImg[0].Images} content={PondStay[0].content} /><hr />
         <SectionBody images={PondStayImg[1].Images} content={PondStay[1].content} /><hr />
         <SectionBody images={PondStayImg[2].Images} content={PondStay[2].content} />
+        <PondFooter />
       </div>,
     popularStays: [
       'The Leela Palace',
@@ -115,6 +121,7 @@ export const dineDetails = {
         <SectionBody images={HydDineImg[0].Images} content={HydDine[0].content} /><hr />
         <SectionBody images={HydDineImg[1].Images} content={HydDine[1].content} /><hr />
         <SectionBody images={HydDineImg[2].Images} content={HydDine[2].content} />
+        <HydFooter />
       </div>,
     popularRestaurants: [
       'Paradise Restaurant',
@@ -130,6 +137,7 @@ export const dineDetails = {
         <SectionBody images={GuntDineImg[0].Images} content={GuntDine[0].content} /><hr />
         <SectionBody images={GuntDineImg[1].Images} content={GuntDine[1].content} /><hr />
         <SectionBody images={GuntDineImg[2].Images} content={GuntDine[2].content} />
+        <GuntFooter />
       </div>,
     popularRestaurants: [
       'Sree Annapurna Restaurant',
@@ -145,6 +153,7 @@ export const dineDetails = {
         <SectionBody images={BangDineImg[0].Images} content={BangDine[0].content} /> <hr />
         <SectionBody images={BangDineImg[1].Images} content={BangDine[1].content} /><hr />
         <SectionBody images={BangDineImg[2].Images} content={BangDine[2].content} />
+        <BangFooter />
       </div>,
     popularRestaurants: [
       'MTR (Mavalli Tiffin Room)',
@@ -160,6 +169,7 @@ export const dineDetails = {
         <SectionBody images={PondDineImg[0].Images} content={PondDine[0].content} /><hr />
         <SectionBody images={PondDineImg[1].Images} content={PondDine[1].content} /><hr />
         <SectionBody images={PondDineImg[2].Images} content={PondDine[2].content} />
+        <PondFooter />
       </div>,
     popularRestaurants: [
       'The Leela Palace',
@@ -178,6 +188,7 @@ export const eventDetails = {
         <SectionBody images={HydEventImg[0].Images} content={HydEvents[0].content} /><hr />
         <SectionBody images={HydEventImg[1].Images} content={HydEvents[1].content} /><hr />
         <SectionBody images={HydEventImg[2].Images} content={HydEvents[2].content} />
+        <HydFooter />
       </div>,
     popularRestaurants: [
       'Paradise Restaurant',
@@ -194,6 +205,7 @@ export const eventDetails = {
         <SectionBody images={GuntEventImg[1].Images} content={GuntEvents[1].content} /><hr />
         <SectionBody images={GuntEventImg[2].Images} content={GuntEvents[2].content} /><hr />
         <SectionBody images={GuntEventImg[2].Images} content={GuntEvents[3].content} />
+        <GuntFooter />
       </div>,
     popularRestaurants: [
       'Sree Annapurna Restaurant',
@@ -209,6 +221,7 @@ export const eventDetails = {
         <SectionBody images={BangEventImg[0].Images} content={BangEvents[0].content} /><hr />
         <SectionBody images={BangEventImg[1].Images} content={BangEvents[1].content} /><hr />
         <SectionBody images={BangEventImg[2].Images} content={BangEvents[2].content} />
+        <BangFooter />
       </div>,
     popularRestaurants: [
       'MTR (Mavalli Tiffin Room)',
@@ -224,6 +237,7 @@ export const eventDetails = {
         <SectionBody images={PondEventImg[0].Images} content={PondEvents[0].content} /><hr />
         <SectionBody images={PondEventImg[1].Images} content={PondEvents[1].content} /><hr />
         <SectionBody images={PondEventImg[2].Images} content={PondEvents[2].content} />
+        <PondFooter />
       </div>,
     popularRestaurants: [
       'The Leela Palace',

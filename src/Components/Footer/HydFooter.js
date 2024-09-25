@@ -9,8 +9,7 @@ const HydFooter = () => {
     <div className='foot'>
       <div>
         <h3>ABOUT US</h3>
-        <p>Samadhana Sadan is a year-round conference and retreat center located at Ponallu
-          Village near Shameerpate at a beautiful green non pollution environment.</p>
+        <p>Samadhana Sadan, managed by Suhana Beulah Hotels and Resorts, is more than just a venue; it is a destination for creating unforgettable memories. We look forward to the opportunity to host your upcoming events and make them truly special .</p>
       </div>
       <div className='section-div'>
         <h3>CONTACT US</h3>
